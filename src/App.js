@@ -53,7 +53,10 @@ export default function App() {
             style={{
               cursor: "pointer",
               padding: "1rem",
-              fontsize: "larger"
+              fontsize: "larger",
+              border: "1px solid black",
+              borderRadius: "0.5rem",
+              margin: "1rem 0.3rem"
             }}
           >
             {genre}
@@ -62,10 +65,20 @@ export default function App() {
       </div>
       <hr />
       <div style={{ textaline: "left" }}>
-        <ul>
+        <ul style={{ paddingInlineStart: "0" }}>
           {" "}
           {DB[selectedGenre].map((talk) => (
-            <li style={{ listStyle: "None" }}>
+            <li
+              style={{
+                listStyle: "None",
+                padding: "1rem",
+                margin: "1rem",
+                border: "1px solid #9CA3AF",
+                borderRadius: "0.5rem",
+                liststyle: "none",
+                width: "70%"
+              }}
+            >
               <div style={{ fontSize: "larger" }}> {talk.name} </div>
               <div style={{ fontSize: "smaller" }}> {talk.rating} </div>
             </li>
