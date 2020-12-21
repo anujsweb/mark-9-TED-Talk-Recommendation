@@ -5,32 +5,32 @@ import { useState } from "react";
 const DB = {
   Technology: [
     {
-      name: "The thrilling potential of SixthSense technology",
-      rating: "4.5"
+      name: "The thrilling potential of SixthSense technology - Pranav Mistry",
+      rating: "⭐4.5"
     },
     {
-      name: "Underwater astonishments",
-      rating: "5"
+      name: "Underwater astonishments - David Gallo",
+      rating: "⭐5"
     }
   ],
   Entertainment: [
     {
-      name: "Your elusive creative genius",
-      rating: "4.5"
+      name: "Your elusive creative genius - Elizabeth Gilbert",
+      rating: "⭐4.5"
     },
     {
-      name: "If I should have a daughter",
-      rating: "4"
+      name: "If I should have a daughter - Sarah Kay",
+      rating: "⭐4"
     }
   ],
   Global_issues: [
     {
-      name: "The next outbreak We are not ready",
-      rating: "4.5/5"
+      name: "The next outbreak We are not ready - Bill Gates",
+      rating: "⭐4.5/5"
     },
     {
-      name: "Are we in control of our own decisions",
-      rating: "4/5"
+      name: "Are we in control of our own decisions - Dan Ariely",
+      rating: "⭐4/5"
     }
   ]
 };
