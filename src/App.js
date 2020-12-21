@@ -76,7 +76,7 @@ export default function App() {
                 border: "1px solid #9CA3AF",
                 borderRadius: "0.5rem",
                 liststyle: "none",
-                width: "70%"
+                width: "60%"
               }}
             >
               <div style={{ fontSize: "larger" }}> {talk.name} </div>
