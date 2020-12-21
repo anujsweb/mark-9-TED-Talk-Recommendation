@@ -3,7 +3,7 @@ import "./styles.css";
 import { useState } from "react";
 
 const DB = {
-  technology: [
+  Technology: [
     {
       name: "The thrilling potential of SixthSense technology",
       rating: "4.5"
@@ -35,13 +35,15 @@ const DB = {
   ]
 };
 export default function App() {
-  const [selectedGenre, setGenre] = useState("technology");
+  const [selectedGenre, setGenre] = useState("Technology");
   function genreClickHandler(genre) {
     setGenre(genre);
   }
   return (
     <div className="App">
-      <h1>TED Talks Recommendation</h1>
+      <h1>
+        <span>TED</span> Talks Recommendation
+      </h1>
       <p style={{ fontsize: "smaller" }}>
         {" "}
         Check out my favourite talks. Select a genre to get started{" "}
@@ -53,7 +55,7 @@ export default function App() {
             style={{
               cursor: "pointer",
               padding: "1rem",
-              fontsize: "larger",
+              background: "#D1D5DB",
               border: "1px solid black",
               borderRadius: "0.5rem",
               margin: "1rem 0.3rem"
@@ -66,19 +68,20 @@ export default function App() {
       <hr />
       <div style={{ textaline: "left" }}>
         <ul style={{ paddingInlineStart: "0" }}>
-          {" "}
           {DB[selectedGenre].map((talk) => (
             <li
+              key={talk.name}
               style={{
                 listStyle: "None",
                 padding: "1rem",
-                margin: "1rem",
+                margin: "1rem 0rem",
                 border: "1px solid #9CA3AF",
                 borderRadius: "0.5rem",
                 liststyle: "none",
-                width: "52%"
+                width: "70%"
               }}
             >
+              {" "}
               <div style={{ fontSize: "larger" }}> {talk.name} </div>
               <div style={{ fontSize: "smaller" }}> {talk.rating} </div>
             </li>
