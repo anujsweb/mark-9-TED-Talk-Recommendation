@@ -11,6 +11,10 @@ const DB = {
     {
       name: "Underwater astonishments - David Gallo",
       rating: "⭐5"
+    },
+    {
+      name: "The science of friction — and its surprising impact on our lives - Jennifer Vail",
+      rating: "⭐4"
     }
   ],
   Entertainment: [
@@ -20,6 +24,10 @@ const DB = {
     },
     {
       name: "If I should have a daughter - Sarah Kay",
+      rating: "⭐4"
+    },
+    {
+      name: "Does photographing a moment steal the experience from you? - Erin Sullivan",
       rating: "⭐4"
     }
   ],
@@ -31,6 +39,10 @@ const DB = {
     {
       name: "Are we in control of our own decisions - Dan Ariely",
       rating: "⭐4/5"
+    },
+    {
+      name: "Innovating to zero!",
+      rating: "⭐4"
     }
   ]
 };
